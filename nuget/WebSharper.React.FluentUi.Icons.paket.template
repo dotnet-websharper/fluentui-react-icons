@@ -1,0 +1,20 @@
+type file
+id WebSharper.React.FluentUi.Icons
+authors
+    IntelliFactory
+owners
+    IntelliFactory
+repositoryType git
+repositoryUrl https://github.com/dotnet-websharper/fluentui-react-icons/
+licenseUrl https://github.com/dotnet-websharper/fluentui-react-icons/blob/master/LICENSE.md
+iconUrl https://github.com/dotnet-websharper/core/raw/websharper50/tools/WebSharper.png
+projectUrl https://github.com/dotnet-websharper/fluentui-react-icons
+description
+    WebSharper React bindings for @fluentui/react-icons  2.0.220+
+tags
+    Web JavaScript F# C#
+files
+    ../WebSharper.React.FluentUi.Icons/bin/Release/netstandard2.0/WebSharper.React.FluentUi.Icons.dll ==> lib/netstandard2.0
+    ../WebSharper.React.FluentUi.Icons/bin/Release/netstandard2.0/WebSharper.React.FluentUi.Icons.xml ==> lib/netstandard2.0
+dependencies
+        WebSharper ~> LOCKEDVERSION:[3]
