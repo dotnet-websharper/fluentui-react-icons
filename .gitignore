@@ -16,3 +16,5 @@ obj/
 *.userwebsharper.log
 package.json
 package-lock.json
+build/
+websharper.log

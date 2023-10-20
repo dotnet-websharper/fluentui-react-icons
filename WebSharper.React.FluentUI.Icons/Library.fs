@@ -1,4 +1,4 @@
-namespace FluentUi
+namespace WebSharper.FluentUI.React
     open WebSharper
     open WebSharper.React
     open WebSharper.JavaScript
