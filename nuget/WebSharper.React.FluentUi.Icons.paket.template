@@ -1,5 +1,5 @@
 type file
-id WebSharper.React.FluentUi.Icons
+id WebSharper.FluentUI.React.Icons
 authors
     IntelliFactory
 owners
