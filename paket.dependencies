@@ -1,6 +1,6 @@
 source https://api.nuget.org/v3/index.json
 source https://nuget.pkg.github.com/dotnet-websharper/index.json
-source ../localstorage
+source ../localnuget
 
 storage: none
 framework: netstandard2.0
