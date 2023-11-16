@@ -2,17 +2,18 @@ STORAGE: NONE
 RESTRICTION: == netstandard2.0
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    FSharp.Core (7.0.401)
+    FSharp.Core (8.0.100)
     System.Reflection.Emit.ILGeneration (4.7)
     System.Reflection.Emit.Lightweight (4.7)
       System.Reflection.Emit.ILGeneration (>= 4.7)
-    WebSharper (7.0.3.364-beta3)
+  remote: https://nuget.pkg.github.com/dotnet-websharper/index.json
+    WebSharper (7.0.4.376-beta3)
       FSharp.Core (>= 6.0)
       System.Reflection.Emit.Lightweight (>= 4.7)
-    WebSharper.FSharp (7.0.3.364-beta3)
-      WebSharper (7.0.3.364-beta3)
-    WebSharper.React (7.0.2.364-beta3)
-      WebSharper (>= 7.0.3 < 7.1)
+    WebSharper.FSharp (7.0.4.376-beta3)
+      WebSharper (7.0.4.376-beta3)
+    WebSharper.React (7.0.3.376-beta3)
+      WebSharper (>= 7.0.4 < 7.1)
 
 GROUP wsbuild
 
