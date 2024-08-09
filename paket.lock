@@ -2,7 +2,7 @@ STORAGE: NONE
 RESTRICTION: == netstandard2.0
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    FSharp.Core (8.0.300)
+    FSharp.Core (8.0.301)
     System.Reflection.Emit.ILGeneration (4.7)
     System.Reflection.Emit.Lightweight (4.7)
       System.Reflection.Emit.ILGeneration (>= 4.7)
