@@ -4,9 +4,9 @@ source ../localnuget
 
 storage: none
 framework: netstandard2.0
-nuget WebSharper prerelease
-nuget WebSharper.FSharp prerelease
-nuget WebSharper.React prerelease
+nuget WebSharper ~> 9.0
+nuget WebSharper.FSharp ~> 9.0
+nuget WebSharper.React ~> 9.0
 
 group wsbuild
     git https://github.com/dotnet-websharper/build-script websharper80
