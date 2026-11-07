@@ -15,6 +15,7 @@ tags
     Web JavaScript F# C#
 files
     ../WebSharper.React.FluentUi.Icons/bin/Release/netstandard2.0/WebSharper.React.FluentUi.Icons.dll ==> lib/netstandard2.0
+    ../WebSharper.React.FluentUi.Icons/bin/Release/netstandard2.0/WebSharper.React.FluentUi.Icons.websharper ==> lib/netstandard2.0
     ../WebSharper.React.FluentUi.Icons/bin/Release/netstandard2.0/WebSharper.React.FluentUi.Icons.xml ==> lib/netstandard2.0
 dependencies
         WebSharper ~> LOCKEDVERSION:[3]
