@@ -1,0 +1,13 @@
+{
+  "name": "websharper.fluentui.react.icons.sample",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "dependencies": {
+    "@fluentui/react-icons": "^2.0.345",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
