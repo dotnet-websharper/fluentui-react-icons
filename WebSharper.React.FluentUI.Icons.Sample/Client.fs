@@ -396,7 +396,7 @@ module Client =
             status.Value <- "The #icons-root container was not found."
         | root ->
             try
-                ReactHelpers.Mount root (ReactHelpers.OfFunction App ())
+                ReactHelpers.Mount root (WebSharper.React.Helpers.Helpers.ofFunction App () [])
                 status.Value <-
                     "Mounted " + string catalog.Length + " icon pairs and "
                     + string colorCatalog.Length + " color icons from @fluentui/react-icons "
