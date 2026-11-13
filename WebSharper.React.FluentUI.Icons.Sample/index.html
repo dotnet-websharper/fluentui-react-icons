@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSharper.FluentUI.React.Icons — sample</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230078d4'/%3E%3Ccircle cx='8' cy='8' r='3.5' fill='none' stroke='%23fff' stroke-width='1.4'/%3E%3C/svg%3E" />
+    <script>
+        // Apply a previously chosen theme before first paint. Light is the
+        // default; the key is shared with Client.fs (themeKey).
+        try {
+            var t = localStorage.getItem('websharper-fluentui-icons-theme');
+            if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) { }
+    </script>
+    <link rel="stylesheet" href="site.css" />
+    <!-- @fluentui/react-icons, react and react-dom are bundled from their npm packages; the WebSharper head is folded in here. -->
+    <!-- ws-head -->
+</head>
+<body>
+    <header class="app-header">
+        <div class="app-titles">
+            <h1>WebSharper.FluentUI.React.Icons</h1>
+            <p>
+                Fluent UI System icons for <a href="https://websharper.com">WebSharper</a> —
+                rendered from F# through <code>WebSharper.React</code>.
+            </p>
+        </div>
+        <div class="app-actions">
+            <button class="btn theme-toggle" ws-onclick="ToggleTheme" title="Switch between the light and dark theme">
+                <span>${themeLabel}</span>
+            </button>
+            <a class="app-source" href="https://github.com/dotnet-websharper/fluentui-react-icons">Source</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <p class="notice">
+            Every tile below is a React component from <code>@fluentui/react-icons</code>, imported through the
+            binding and rendered with <code>WebSharper.React</code>. The page chrome is a WebSharper.UI template;
+            the gallery inside <code>#icons-root</code> is a React tree built from <code>Icons.Helpers</code>.
+            Filter by name, switch the variant, resize the icons or tint them — the controls drive React state.
+        </p>
+
+        <section class="readout">
+            <dl>
+                <div><dt>@fluentui/react-icons</dt><dd>${npmVersion}</dd></div>
+                <div><dt>bound icons</dt><dd>${iconCount}</dd></div>
+                <div><dt>react</dt><dd>${reactVersion}</dd></div>
+            </dl>
+        </section>
+
+        <div id="icons-root" class="icons-root"></div>
+
+        <section class="usage">
+            <h2>Usage</h2>
+            <pre><code>open WebSharper.FluentUI.React
+
+// The helpers turn an icon into a React element. Props are string * obj pairs.
+Icons.Helpers.addFilled [ "fontSize" =&gt; 32; "title" =&gt; "Add" ]
+
+// The components themselves are exposed too, for composition in a React tree.
+ReactHelpers.Elt Icons.SearchRegular [ "primaryFill" =&gt; "#0078d4" ] []</code></pre>
+        </section>
+
+        <p class="status" role="status">${status}</p>
+    </main>
+
+    <script type="text/javascript" src="Scripts/WebSharper.React.FluentUI.Icons.Sample.min.js"></script>
+</body>
+</html>
